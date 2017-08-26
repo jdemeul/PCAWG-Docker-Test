@@ -16,7 +16,7 @@ output_dir="$directory/output/"
 
 picard="$base_dir/lib/picard/picard.jar"
 
-orig_header_file="$data_dir/${type}_header.sam"
+orig_header_file="$base_dir/tmp/$donor/${type}_header.sam"
 # java -Xmx32G -jar $picard ViewSam INPUT=$orig_bam HEADER_ONLY=true | sed -e '$a\' > $orig_header_file
 
 unaligned_json=""
